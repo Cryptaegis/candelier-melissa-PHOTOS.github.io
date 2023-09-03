@@ -1,0 +1,3 @@
+[submodule "PHOTOS"]
+	path = PHOTOS
+	url = https://github.com/ravenqueenofinsanity/PHOTOS.git
