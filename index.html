@@ -8,15 +8,24 @@
 
   <title>Accueil</title>
 </head>
+<div w3-include-html="header.html"></div>
 
 <body>
-  <div w3-include-html="header.html"></div>
- 
-  <p>maman</p>
+  <nav class="navigation-container">
+    <p class="nav-btn" id="reception">Accueil</p>
+    <p  class="nav-btn"  id="galerie">Galerie</p>
+    <p class="nav-btn"  id="tarif">Tarif</p>
+    <p  class="nav-btn"  id="contact">Contact</p>
+  </nav>
+      
+  <div class="pictures-container" id="picture-box">
+  </div>
+
   <div w3-include-html="footer.html"></div>
   <script>
     includeHTML();
   </script>
+    <script src="index.js"></script>
 
 </body>
 </html>

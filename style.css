@@ -2,31 +2,27 @@
     html{
         background-image: url("images/background.jpg");
     }
+  
     .container-reseaux{
         display: flex;
         justify-content: space-around;
+        position: absolute;
         width:35%;
         height: 2em;
         border:solid;
         margin-top:300em;
         margin-left: 30em;
 }    
-p{
-    position:absolute;
-} 
+
 
 #logos{
-    position:absolute;
+    position: absolute;
     height: 20em;
     width: 20%;
     margin-left: 40%;
 }
 
-.site-search{
-    position: absolute;
-    margin-top: 22em;
-    margin-left: 41em;
-}
+
 .dropdown-toggle{
     position:absolute;
     margin-top: 30em;
@@ -34,4 +30,23 @@ p{
 
 }
 
-    
+
+ .pictures-container{
+    position:absolute;
+    border: 10px solid;
+    width:100%;
+    height:100em; 
+    margin-top: 40em;
+    }
+    .navigation-container{
+        position: absolute;
+        justify-content: space-around;
+        width:50%;
+        display: flex;
+        margin-top: 25em;
+        margin-left:25em;
+        border: solid;
+    }
+    .nav-btn{
+        padding-top: 1em;
+    }
