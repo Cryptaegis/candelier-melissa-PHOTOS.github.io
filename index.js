@@ -1,6 +1,6 @@
 let btnReception = document.getElementById('reception'),
     btnMariage = document.getElementById('mariage'),
-    btnPregnant = document.getElementById('pregnacy'),
+    btnPregnant = document.getElementById('pregnancy'),
     btnBaby = document.getElementById('baby'),
     btnFamily = document.getElementById('family'),
     btnDew = document.getElementById('dew'),
@@ -23,8 +23,8 @@ let btnReception = document.getElementById('reception'),
 // Add a click event listener to the button Mariage
 btnMariage.addEventListener('click', ()=>{
 
-    // Remove the class from the container  
-    ul.remove();
+    // Remove the old images from the container  
+    ul.innerHTML="";
     // Loop through the images and create a new image element for each one
     for (let  i = 0; i < mariageP.length; i++) {
       let   img = document.createElement('img');
@@ -32,8 +32,7 @@ btnMariage.addEventListener('click', ()=>{
       // Set the image source
       img.src = mariageP[i];
      // Add the image to the container
-      boxPicture.appendChild(img);
-      btnMariage.style.pointerEvents = "none";
+      ul.append(img);
 
   }
 }); 
@@ -41,18 +40,59 @@ btnMariage.addEventListener('click', ()=>{
 
 
 btnPregnant.addEventListener('click', ()=>{
-  // Remove the class from the container  
- // mariageP.parentNode.removeChild('mariageP');
- //btnMariage.parentNode.style.display ='none';
-  ul.remove();
-  // Loop through the images and create a new image element for each one
-  for (let  i = 0; i < pregnantP.length; i++) {
-   let img = document.createElement('img');
-    // Set the image source
-    img.src = pregnantP[i];
-   // Add the image to the container
-    boxPicture.appendChild(img);
-    btnPregnant.style.pointerEvents = "none";
-}
+      
+      ul.innerHTML="";
+
+    for (let j = 0; j < pregnantP.length ;j++){
+      const img2 =document.createElement("img");
+      img2.src = pregnantP[j];
+      ul.append(img2)
+      }
+
 }); 
 
+btnFamily.addEventListener('click',() =>{
+  ul.innerHTML="";
+  for (let k = 0;k<familyP.length;++k){
+    const img3 =document.createElement ("img");
+    img3.src = familyP [k];
+    ul.append(img3)
+    }
+    });
+
+    btnBaby.addEventListener('click', ()=>{
+      ul.innerHTML="";
+      for (let l=0;l<babyP.length;++l ){
+        const img4 =document.createElement ('img');
+        img4.src = babyP [l];
+        ul.append(img4)
+      }
+        
+    });
+    btnCouple.addEventListener('click', ()=>{
+      ul.innerHTML="";
+      for (let n=0;n<coupleP.length;++n ) {
+        const img5 =document.createElement ('img');
+        img5.src = coupleP [n];
+        ul.append(img5)
+        }
+    });
+
+    btnDew.addEventListener('click', ()=>{
+      ul.innerHTML="";
+      for (let m=0;m<dewP.length;++m ) {
+        const img6 = document.createElement ('img');
+        img6.src = dewP [m];
+        ul.appendChild(img6)
+        }
+    });
+
+    btnFace.addEventListener('click', ()=>{
+      ul.innerHTML="";
+      for (let o=0;o<faceP.length;++o ) {
+        const img7 = document.createElement ('img');
+        img7.src = faceP [o];
+        ul.appendChild(img7);
+        }
+    });
+    

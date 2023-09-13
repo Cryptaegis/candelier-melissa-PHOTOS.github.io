@@ -66,3 +66,95 @@
     .nav-btn{
         padding-top: 1em;
     }
+
+    .card{
+        position:absolute;
+        top: 50%;
+        left:30%;
+        width: 100%;
+    }
+    #card1{
+        margin:20% 32%;
+    }
+        #card2{
+        margin:35%; 
+    }
+    #card3{
+        margin:50% 32%;
+    }
+    #card4{
+        margin:20% 2%;
+    }
+    #card5{
+        margin:35% 5%;
+    }
+    #card6{
+        margin:50% 6%;
+    }
+
+    
+    #row1{
+        position: absolute;
+        top: 90em;  
+        left: 20%;  
+        margin-bottom: 10%;             
+    }
+    
+    #titleEmail{
+        width:100%;
+
+    }
+    #staticEmail{
+        width: 50%;
+        margin: 1%;
+        color:	rgb(97, 102, 102);
+        background:	rgb(164,172,172);
+        border-radius: 10px;
+
+    }
+    .control-text{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background:	rgb(164,172,172);
+ 
+
+    }
+    #name{
+        width: 30%;
+        margin:0 1px;
+    }
+    .btn-primary{
+        width: 10%;
+        font-size: 1.5em;
+        margin: 7% 40%;
+        color: black;
+        background: none;
+        border:none;
+    }
+    .btn-primary:hover{
+        background: none;
+        color: black;
+    }
+    .textarea-title{
+        margin: 2% 0;
+
+    }
+    .form-control{
+        margin:0% 2%;
+        background:	rgb(164,172,172);
+        border-radius: 10px;
+        width: 50%;
+    }
+
+    .card-link{
+        border: black solid;
+        padding: 2%;
+        border-radius: 5px;
+        color: black;
+        text-decoration: none;
+    }
+    .card-link:hover{
+        color: black;
+
+    }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" />
+  <script src="include.js"></script>
+    <title>Document</title>
+</head>
+<div w3-include-html="header.html"></div>
+
+<body>
+    <div class="card" id="card1" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Just moi</h5>
+          <h6 class="card-subtitle mb-2 text-muted">130 euros</h6>
+          <p class="card-text">Séance pour une personne, en extérieur ou en studio.</p>
+          <a href="#" class="card-link">Réserver</a>
+        </div>
+      </div>
+      <div class="card" id="card2"  style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">J’immortalise l’événement</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Sur mesure</h6>
+          <p class="card-text"> J’immortalise l’événement sur mesure Prestation de mariage ou baptême sur devis.</p>
+          <a href="#" class="card-link">Réserver</a>
+        </div>
+      </div>
+      <div class="card" id="card3" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Famille</h5>
+          <h6 class="card-subtitle mb-2 text-muted">220 euros</h6>
+          <p class="card-text">Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio 30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans) .</p>
+          <a href="#" class="card-link">Réserver</a>
+        </div>
+      </div>
+      <div class="card" id="card4" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"> Pour deux </h5>
+          <h6 class="card-subtitle mb-2 text-muted">195 euros</h6>
+          <p class="card-text">Pour deux personnes, en extérieur ou en studio.</p>
+          <a href="#" class="card-link">Réserver</a>
+        </div>
+      </div>
+      <div class="card" id="card5"   style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Mon bébé</h5>
+          <h6 class="card-subtitle mb-2 text-muted">100 euros</h6>
+          <p class="card-text">Mon bébé » Photo d’enfant jusqu’à 3 ans (photo à domicile) </p>
+          <a href="#" class="card-link">Réserver</a>
+        </div>
+      </div>
+      <div class="card" id="card6" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"> Il était une fois </h5>
+          <h6 class="card-subtitle mb-2 text-muted">160 euros</h6>
+          <p class="card-text">Photo de grossesse (À votre domicile, en extérieur ou en studio)</p>
+          <a href="#" class="card-link">Réserver</a>
+        </div>
+      </div>
+
+      <form id="row1">
+        <div class="form-group row" >
+          <div class="col">
+            <input type="text" class="form-control" id="name"  placeholder="Nom">
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label" id="titleEmail">Email</label>
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+          </div>
+            <div class="form-group row">
+                <label for="static" class="col-sm-2 col-form-label">Object</label>
+                <div class="form-group row">
+            <input class="form-control" type="text" placeholder="Default input">
+                </div>
+            </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="textarea-title">Message</label>
+                    <textarea class="control-text" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-2">Envoyer</button>
+        </div>
+      </form>
+    <div w3-include-html="footer.html"></div>
+  <script>
+    includeHTML();
+  </script>
+    <script src="index.js"></script>
+
+</body>
+</html>
