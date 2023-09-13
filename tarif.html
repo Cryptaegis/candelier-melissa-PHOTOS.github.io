@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" />
   <script src="include.js"></script>
-    <title>Document</title>
+    <title>Tarif</title>
+    <style>
+      #row1{
+     position: absolute;
+     top: 90em;  
+     left: 20%;  
+     margin-bottom: 10%;             
+ }
+ .container-reseaux{
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        max-width: 1100px;
+        height: 5%;
+        top:130em;
+        left: 40em;
+}  
+   </style>
 </head>
 <div w3-include-html="header.html"></div>
 
@@ -58,29 +75,9 @@
           <a href="#" class="card-link">Réserver</a>
         </div>
       </div>
-
-      <form id="row1">
-        <div class="form-group row" >
-          <div class="col">
-            <input type="text" class="form-control" id="name"  placeholder="Nom">
-          </div>
-          <div class="form-group row">
-            <label for="staticEmail" class="col-sm-2 col-form-label" id="titleEmail">Email</label>
-              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
-          </div>
-            <div class="form-group row">
-                <label for="static" class="col-sm-2 col-form-label">Object</label>
-                <div class="form-group row">
-            <input class="form-control" type="text" placeholder="Default input">
-                </div>
-            </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1" class="textarea-title">Message</label>
-                    <textarea class="control-text" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary mb-2">Envoyer</button>
-        </div>
-      </form>
+      
+      <div w3-include-html="form.html"></div>
+ 
     <div w3-include-html="footer.html"></div>
   <script>
     includeHTML();

@@ -3,17 +3,6 @@
         background-image: url("images/background.jpg");
     }
   
-    .container-reseaux{
-        position: absolute;
-        display: flex;
-        justify-content: space-around;
-        max-width: 1100px;
-        height: 5%;
-        border:solid;
-        top:400em;
-        left: 40em;
-}    
-
 
 #logos{
     position: absolute;
@@ -21,7 +10,13 @@
     width: 20%;
     margin-left: 40%;
 }
-
+#logos-mobile{
+    position: fixed;
+    z-index: 15;
+    height: 10em;
+    width: 10%;
+    transform: rotate(90deg);
+}
 
 .dropdown-toggle{
     position:absolute;
@@ -56,15 +51,48 @@
    
     .navigation-container{
         position: absolute;
-        justify-content: space-around;
         width:50%;
         display: flex;
+        justify-content: space-around;
         margin-top: 25em;
         margin-left:25em;
-        border: solid;
     }
     .nav-btn{
         padding-top: 1em;
+        text-decoration: none;
+        color: black;
+    }
+    .nav-btn:hover{
+        color: black;
+        font-weight: bolder;
+    }
+
+    .nav-btn:focus{
+        color: black;
+        font-weight:bolder;
+    }
+    .nav-btn:active{
+        color: black;
+        font-weight:bolder;
+    }
+
+    .button-galerie{
+        position: absolute;
+        justify-content: space-around;
+        top:80%;
+        margin-left: 15%;
+        color: black;
+        font-size: 1em;
+        width: 100%;
+    }
+    .button-element{
+        border-radius: 30px;
+        border: none;
+        width: 10%;
+    }
+    .button-element:hover{
+        background:	rgb(164,172,172);
+        color: black;
     }
 
     .card{
@@ -93,16 +121,11 @@
     }
 
     
-    #row1{
-        position: absolute;
-        top: 90em;  
-        left: 20%;  
-        margin-bottom: 10%;             
-    }
+   
     
     #titleEmail{
         width:100%;
-
+        margin-top: 5%;
     }
     #staticEmail{
         width: 50%;
@@ -120,9 +143,13 @@
  
 
     }
-    #name{
+    #lastName{
         width: 30%;
         margin:0 1px;
+    }
+    #name{
+        width: 30%;
+       margin: -35px 40%; 
     }
     .btn-primary{
         width: 10%;
@@ -158,3 +185,11 @@
         color: black;
 
     }
+    h2{
+        position: absolute; 
+        top:100%;  
+        left: 35%;
+        letter-spacing: .2rem;
+        text-align: center;
+        font-weight: lighter;
+        }
